@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --primary-color: #1EBFC1
+}
+
+/* common*/
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+
+.headerr {
+    position: sticky;
+    top: -44px;
+}
+
+
+
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 52px 0 8px;
+
+}
+
+
+.nav {
+    margin: 0 134px 0 216px;
+}
+
+.nav ul {
+    display: flex;
+
+}
+
+.nav a {
+    padding: 8px 19px;
+    color: #2F3A3B;
+    font-size: 1.6rem;
+}
+
+nav a:hover {
+    text-shadow: 1px 0 0 currentcolor;
+    color: #2F3A3B;
+    font-size: 1.6rem;
+
+}
+
+.action .first {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #494949;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.action .second {
+    padding: 12px 24px;
+    color: #1EBFC1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #1EBFC1;
+}
+
+/* hero */
+.hero {
+    padding-top: 54px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .content-block {
+    align-content: center;
+    width: 39%
+}
+
+.hero .hero-sumary3 img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero .heading {
+    color: #0D1111;
+    font-size: 6.2rem;
+    line-height: 7.2rem;
+    font-weight: 700;
+    margin: 18px 0 46px;
+}
+
+.hero .content-block .desc {
+    color: #9DA6A5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.2rem
+}
+
+.hero .cta-group {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .content-block .btn,
+.hero .content-block .cta-group .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .content-block .btn {
+
+    width: 186px;
+    line-height: 68px;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.hero .content-block .cta-group .icon {
+
+    width: 62px;
+    height: 62px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.hero .media-block {
+    margin-left: auto;
+}
+
+.hero .media-block .img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.hero .media-block {
+    position: relative;
+}
+
+.hero .dfc {
+    display: flex;
+    position: relative;
+    align-items: center;
+    position: absolute;
+}
+
+.hero .hero-sumary1 {
+
+    width: 157px;
+    height: 75px;
+    top: 149px;
+    left: -40px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .hero-sumary1 .icon {
+
+    margin: 0 16px 0 25px;
+}
+
+.hero .hero-sumary1 .icon2 {
+    position: absolute;
+    bottom: 26px;
+    left: 29px;
+
+}
+
+
+
+.hero .dfc .info {
+
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero .hero-sumary1 .info {
+    width: 55px;
+}
+
+.hero .hero-sumary2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 132px;
+    bottom: 46px;
+    left: -65px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .hero-sumary2 .title {
+    width: 53px;
+    height: 15px;
+}
+
+
+.hero .hero-sumary2 .icon {
+
+    margin: 0 25px 23px;
+
+}
+
+.hero .hero-sumary3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 207px;
+    height: 90px;
+    bottom: 41px;
+    right: 45px;
+    border-radius: 24px;
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .hero-sumary3 .icon {
+    display: flex;
+    margin-left: 35px;
+    margin-bottom: 17px;
+}
+
+.hero .hero-sumary3 .info {
+    margin-left: 35px;
+    margin-top: 17px;
+}
+
+.hero .hero-sumary3 .icon img {
+
+    margin-left: -9px;
+
+}
+
+.hero .hero-sumary3 .icon img:first-child {
+    margin-left: 0
+}
+
+.hero .hero-sumary3 .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    margin-left: -9px;
+
+    border-radius: 50%;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    background: var(--primary-color)
+}
