@@ -31,6 +31,13 @@ a {
     text-decoration: none;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* header */
 
 
@@ -66,11 +73,13 @@ a {
 }
 
 nav a:hover {
+
     text-shadow: 1px 0 0 currentcolor;
     color: #2F3A3B;
     font-size: 1.6rem;
 
 }
+
 
 .action .first {
     display: inline-block;
@@ -162,6 +171,10 @@ nav a:hover {
     background: #fff;
     box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
     cursor: pointer;
+}
+
+.hero .content-block .cta-group .icon:hover {
+    border: 1px solid var(--primary-color)
 }
 
 .hero .media-block {
@@ -298,4 +311,71 @@ nav a:hover {
     font-style: normal;
     font-weight: 500;
     background: var(--primary-color)
+}
+
+.feature {
+
+    margin: 130px 0;
+}
+
+.feature .body {
+    width: 1024px;
+}
+
+.feature .first-haft .note {
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.feature .first-haft .heading {
+    width: 577px;
+    margin: 18px 0;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+}
+
+.feature .first-haft .desc {
+    width: 590px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400
+}
+
+.feature .second-haft .list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.feature .second-haft .list .item.first {
+    width: 168px;
+}
+
+.feature .second-haft .list .item.second {
+    width: 223px;
+
+}
+
+.feature .second-haft .list .item.third {
+    width: 224px;
+}
+
+.feature .second-haft .title a {
+    display: block;
+    padding: 26px 0 16px;
+    color: #0D1111;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature .second-haft .desc {
+    color: #9DA6A5;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px
 }
