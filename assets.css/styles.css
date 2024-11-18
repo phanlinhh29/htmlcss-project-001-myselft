@@ -27,6 +27,12 @@ body {
     opacity: 0.9;
 }
 
+.desc {
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
 }
@@ -36,6 +42,10 @@ a {
     -webkit-line-clamp: var(--line-clamp, 3);
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
 }
 
 /* header */
@@ -193,7 +203,7 @@ nav a:hover {
 
 .hero .dfc {
     display: flex;
-    position: relative;
+
     align-items: center;
     position: absolute;
 }
@@ -320,11 +330,14 @@ nav a:hover {
 
 .feature .body {
     width: 1024px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
 }
+
 
 .feature .first-haft .note {
     color: #767E7E;
-    font-size: 1.2rem;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
@@ -378,4 +391,127 @@ nav a:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 27px
+}
+
+/*--popular*/
+.popular .note {
+    color: #767E7E;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.popular .first-haft .heading {
+    margin: 18px 0 19px;
+    color: #0D1111;
+    font-size: 2.625rem;
+    font-weight: 700;
+}
+
+.popular .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .first-haft .desc {
+    width: 525px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+}
+
+.popular .first-haft .view-cours a {
+    color: #1EBFC1;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.popular .second-haft {
+    margin-top: 79px;
+}
+
+.popular .second-haft .course-list {
+    display: flex;
+    gap: 47px;
+
+}
+
+.popular .second-haft .course-item {
+    flex: 1;
+
+
+}
+
+.popular .second-haft .course-item .thumb {
+    width: 100%;
+    height: 393px;
+    border-radius: 8px;
+    opacity: 0.65;
+    background: #D0EFED;
+    object-fit: cover;
+
+}
+
+.popular .second-haft .course-item {
+    position: relative;
+}
+
+.popular .second-haft .detail {
+    position: absolute;
+    width: 325px;
+    height: 195px;
+    bottom: -71px;
+    left: 17px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .second-haft .detail-wrap {
+    margin: 18px 0 0 25px;
+}
+
+.popular .second-haft .course-item .heading {
+    margin: 18px 0 16px;
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .second-haft .course-item .desc.fee {
+    margin-bottom: 6px;
+    font-size: 1.6rem;
+}
+
+.popular .second-haft .course-item strong {
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .second-haft .duration {
+    display: flex;
+    margin-top: 18px;
+}
+
+.popular .second-haft .duration .desc {
+    display: flex;
+    margin-left: 16px;
+    padding-right: 15px;
+    position: relative;
+
+}
+
+.popular .second-haft .duration .desc::before {
+    content: "";
+
+    position: absolute;
+    width: 6px;
+    height: 6px;
+
+    margin-left: -18px;
+    bottom: 40%;
+    border-radius: 50%;
+    background: var(--primary-color)
 }
