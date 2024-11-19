@@ -461,7 +461,7 @@ nav a:hover {
     position: absolute;
     width: 325px;
     height: 195px;
-    bottom: -71px;
+    bottom: -124px;
     left: 17px;
     border-radius: 8px;
     background: #FFF;
@@ -469,17 +469,19 @@ nav a:hover {
 }
 
 .popular .second-haft .detail-wrap {
-    margin: 18px 0 0 25px;
+    margin: 18px 0 29px 25px;
 }
 
 .popular .second-haft .course-item .heading {
-    margin: 18px 0 16px;
+    height: 33px;
+    margin: 18px 0 16px 0;
     color: #0D1111;
     font-size: 2.2rem;
     font-weight: 700;
 }
 
 .popular .second-haft .course-item .desc.fee {
+    height: 33px;
     margin-bottom: 6px;
     font-size: 1.6rem;
 }
@@ -491,6 +493,7 @@ nav a:hover {
 }
 
 .popular .second-haft .duration {
+    height: 21px;
     display: flex;
     margin-top: 18px;
 }
@@ -510,8 +513,168 @@ nav a:hover {
     width: 6px;
     height: 6px;
 
-    margin-left: -18px;
+    margin-left: -16px;
     bottom: 40%;
     border-radius: 50%;
     background: var(--primary-color)
+}
+
+/*number*/
+.number .body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 389px;
+    height: 131px;
+    width: 862px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.number strong {
+    margin-bottom: -11px;
+    color: #0D1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal
+}
+
+.number .desc {
+    margin-top: 11px;
+    color: #767E7E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* testimoni*/
+.testimoni {
+    height: 481px;
+    margin-top: 264px;
+}
+
+.testimoni .body {
+    display: flex;
+}
+
+.testimoni .left-row {
+    margin-top: 37px;
+    width: 35.9%;
+}
+
+.testimoni .left-row .desc {
+    margin: 27px 0 33px;
+    color: #5D6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+}
+
+
+
+
+
+.testimoni .left-row .people-name {
+
+    display: flex;
+    align-items: center;
+    color: #767E7E;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.testimoni .left-row strong {
+    color: #070707;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.testimoni .left-row .people-name::before {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 2px;
+    bottom: 0;
+    background: #070707;
+    ;
+}
+
+.testimoni .left-row .control {
+    display: flex;
+    margin-top: 52px;
+    gap: 30px;
+}
+
+.testimoni .left-row .control-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+
+}
+
+.testimoni .right-row {
+    width: 64.1%;
+}
+
+.testimoni .right-row {
+    position: relative;
+    width: 58%;
+    height: 481px;
+    margin-left: 72px;
+}
+
+
+.testimoni .right-row .img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimoni .right-row .img.main {
+    top: 107px;
+    right: 171px;
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimoni .right-row .img.first {
+    top: 0;
+    left: 144px;
+    width: 92px;
+    height: 92px
+}
+
+.testimoni .right-row .img.second {
+    right: 0;
+    top: 19px;
+    width: 110px;
+    height: 110px;
+}
+
+.testimoni .right-row .img.third {
+    top: 258px;
+    left: 0;
+}
+
+.testimoni .right-row .img.fourth {
+    bottom: 0;
+    left: 212px;
+}
+
+.testimoni .right-row .img.fith {
+    bottom: 29px;
+    right: 32px;
+}
+
+.testimoni .right-row .img.third,
+.testimoni .right-row .img.fourth,
+.testimoni .right-row .img.fith {
+    width: 78px;
+    height: 78px;
 }
