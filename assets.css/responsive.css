@@ -1,0 +1,63 @@
+/* PC */
+@media screen and (min-width: 992px) {}
+
+/* tablet and mobile */
+@media screen and (max-width: 991px) {
+
+    .nav ul {
+        display: none;
+    }
+
+    .body {
+        position: relative
+    }
+
+    .body .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+    }
+
+    .body .action {
+        position: absolute;
+        top: 50%;
+        right: 0
+    }
+
+    .toogle-menu svg {
+        width: 24px;
+        color: #666
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+
+        transform: translateX(-100%);
+    }
+
+    .menu-checkbox:checked~.menu-overlay {
+        opacity: 1;
+        visibility: visible;
+
+
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:991px) {}
+
+/* mobile */
+@media screen and (max-width: 767px) {}

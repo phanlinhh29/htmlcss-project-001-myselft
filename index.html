@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./assets.css/reset.css">
     <!--Styles-->
     <link rel="stylesheet" href="./assets.css/styles.css">
+    <link rel="stylesheet" href="./assets.css/responsive.css">
     <!--embed code-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,11 +39,26 @@
     <!--header -->
 
     <div class="headerr">
+
+        <!-- pc header -->
         <header class="header fixed">
             <div class="main-content">
-                <!--logo-->
+
                 <div class="body">
-                    <img src="./assets.css/img/logo.svg" alt="" class="logo">
+
+                    <!-- tablet/mobile menu -->
+                    <lable for="menu-checkbox" class="toogle-menu">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </lable>
+
+                    <!--logo  -->
+                    <a href="#!">
+                        <img src="./assets.css/img/logo.svg" alt="" class="logo">
+                    </a>
 
 
                     <!--nav-->
@@ -71,11 +87,26 @@
                         <a class="btn first" href="#!">Sign in</a>
                         <a class="btn second" href="#!">Sign up</a>
                     </div>
+
                 </div>
+
             </div>
         </header>
+        <!-- tablet/mobile header -->
+        <header class="mobile-header">
+            <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox">
+
+            <!-- overlay -->
+            <div class="menu-overlay"></div>
+
+            <!-- menu content -->
+            <div class="menu-drawer"></div>
+        </header>
+
 
     </div>
+
+
 
     <main>
 
@@ -389,6 +420,8 @@
                 <div class="last-part">
                     <span class="des">© Copyright 2020 by Mayad Ahmed. All right reserved.</span>
                 </div>
+
+
 
             </div>
         </footer>
