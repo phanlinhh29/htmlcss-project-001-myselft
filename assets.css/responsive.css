@@ -34,17 +34,17 @@
         position: fixed;
         inset: 0;
         background-color: rgba(0, 0, 0, 0.3);
-        z-index: 3;
+
         opacity: 0;
         visibility: hidden;
-
+        transition: 0.5s ease
     }
 
     .menu-drawer {
         position: fixed;
         inset: 0 40% 0 0;
-        background: #fff;
-
+        background-color: #fff;
+        z-index: 10;
         transform: translateX(-100%);
     }
 
@@ -52,8 +52,12 @@
         opacity: 1;
         visibility: visible;
 
-
     }
+
+    .menu-checkbox:checked~.menu-drawer {
+        transform: translateX(0)
+    }
+
 }
 
 /* tablet */
