@@ -9,7 +9,8 @@
     }
 
     .body {
-        position: relative
+        position: relative;
+        z-index: -1
     }
 
     .body .logo {
@@ -27,7 +28,8 @@
 
     .toogle-menu svg {
         width: 24px;
-        color: #666
+        color: #666;
+        z-index: 2
     }
 
     .menu-overlay {
